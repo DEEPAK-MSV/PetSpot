@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-// import Dogs from "../Animals/Dogs"
-// import Cats from "../Animals/Cats"
 
 function Header() {
     return (
