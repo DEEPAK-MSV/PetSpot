@@ -13,7 +13,7 @@ function Images() {
         const interval = setInterval(() => {
             const nextIndex = (currentImageIndex + 1) % images.length;
             setCurrentImageIndex(nextIndex);
-        }, 2599);
+        }, 4500);
 
         return () => clearInterval(interval);
     }, [currentImageIndex]);
