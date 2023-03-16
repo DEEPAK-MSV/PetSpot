@@ -5,7 +5,7 @@ function Base() {
         <div className='w-full h-full bg-black border-white mt-10'>
             <div className='w-full border-b flex flex-row justify-between'>
                 <div className='pt-20 pl-20  flex flex-row'>
-                    <img className='h-10 w-10' src="public/logo.png" />
+                    <img className='h-10 w-10' src="https://www.transparentpng.com/thumb/dog/dog-amazing-image-download-27.png" alt="dog amazing image download 27 @transparentpng.com" />
                     <h1 className='text-yellow-500 text-3xl font-bold pb-4 pl-2'>PetSpot</h1>
                 </div>
 
