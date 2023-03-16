@@ -11,7 +11,7 @@ function Base() {
 
             </div>
             <div className='justify-between align-center flex flex-row ml-20 mr-28 mt-5'>
-                <h1 className='text-yellow-500 font-bold'>Contact Us</h1>
+                <h1 className='text-yellow-500 font-bold'>Contact us</h1>
                 <h1 className='text-yellow-500 font-bold'>Download</h1>
             </div>
             <div className='justify-between align-center flex flex-row ml-20 mr-16 mt-5'>
