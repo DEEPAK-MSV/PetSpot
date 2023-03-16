@@ -48,7 +48,7 @@ function Content() {
             <div className="w-full h-full pl-10 align-center justify-center flex flex-wrap mt-10">
                 {images.map((image, index) => (
                     <div key={index} className="w-full sm:w-1/2 md:w-1/3 p-4">
-                        <button onClick={()=>alert("please vist store to buy")}>
+                        <button onClick={()=>alert("please vist store")}>
                         <div className="bg-white overflow-hidden">
                             <img src={image.url} alt={image.name} className="w-4/3 rounded-md scale-105 hover:scale-100  transform-all duration-200" />
                             <div className="pt-4 bg-white flex-row">
