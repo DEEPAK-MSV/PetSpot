@@ -7,14 +7,14 @@ function Header() {
             <button>
                 <Link to={"/"}>
                     <div className='flex flex-row cursor-default'>
-                        <img className='h-10 w-10 mr-2 cursor-default' src="https://www.transparentpng.com/thumb/dog/dog-amazing-image-download-27.png" alt="dog amazing image download 27 @transparentpng.com" />
+                        <img className='h-10 w-10 mr-2 cursor-default' src="public\logo.ico" alt="dog amazing image download 27 @transparentpng.com" />
                         <h1 className='text-3xl font-bold font-cursive pr-4 cursor-default'>PetSpot</h1>
                     </div>
                 </Link>
             </button>
             <div className='text-1xl font-bold ml-4'>
                 <ul className='flex cursor-pointer text-center'>
-                    <li className='hover:text-xl' >
+                    <li className='hover:text-xl ' >
                         <button>
                             <Link to="/home" className='pr-7 '>Home</Link>
                         </button>
