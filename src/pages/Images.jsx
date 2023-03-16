@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { BsArrowLeft, BsArrowRight, BsArrowLeftCircle ,BsArrowRightCircle } from "react-icons/bs"
+import React, { useState, useEffect } from 'react';
 
 const images = [
     'https://petshopindia.com/image/cache/catalog/banner1/petshopindia%20cat-1450x400.jpg',
@@ -10,27 +9,20 @@ const images = [
 function Images() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const handleNextClick = () => {
-        const nextIndex = (currentImageIndex + 1) % images.length;
-        setCurrentImageIndex(nextIndex);
-    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const nextIndex = (currentImageIndex + 1) % images.length;
+            setCurrentImageIndex(nextIndex);
+        }, 2599);
 
-    const handlePrevClick = () => {
-        const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
-        setCurrentImageIndex(prevIndex);
-    };
+        return () => clearInterval(interval);
+    }, [currentImageIndex]);
 
     return (
         <div className='h-96'>
             <div className='h-20'></div>
-            <div className='w-full flex justify-center pt-8 relative scroll-smooth  transition-all duration-200 ease-in-out delay-700'>
-                <img className='w-4/5 h-2/4 transform duration-300 rounded-xl' src={images[currentImageIndex]} alt='Pet' />
-                <button className='absolute top-1/2 left-4 pl-10 transform -translate-y-1/2 text-4xl hover:text-5xl ' onClick={handlePrevClick}>
-                    <BsArrowLeftCircle />
-                </button>
-                <button className='absolute top-1/2 right-4 pr-10 transform -translate-y-1/2 text-4xl hover:text-5xl' onClick={handleNextClick}>
-                    <BsArrowRightCircle/>
-                </button>
+            <div className='w-full flex justify-center pt-8 relative scroll-smooth transition-all duration-3900 ease-in-out'>
+                <img className='w-4/5 h-2/4 transform duration-300 rounded-xl transition-opacity' src={images[currentImageIndex]} alt='Pet' />
             </div>
         </div>
     );

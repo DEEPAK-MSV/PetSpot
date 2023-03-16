@@ -17,8 +17,8 @@ function Base() {
             <div className='justify-between align-center flex flex-row ml-20 mr-16 mt-5'>
                 <div>
                     <ul className='flex flex-col text-white font-small'>
+                        <li className='py-2'>Annapurna Complex DSNR</li>
                         <li className='py-2'>Hydreabad</li>
-                        <li className='py-2'>DSNR, Annapurna Complex</li>
                         <li className='py-2'>Email: info@petSpot.com</li>
                         <li className='py-2'>Phone: +91-9848022338</li>
                     </ul>
