@@ -13,7 +13,7 @@ function Header() {
                 </Link>
             </button>
             <div className='text-1xl font-bold ml-4'>
-                <ul className='flex cursor-pointer text-center'>
+                <ul className="flex cursor-pointer text-center">
                     <li className='hover:text-xl ' >
                         <button>
                             <Link to="/home" className='pr-7 '>Home</Link>
