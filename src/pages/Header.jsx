@@ -12,7 +12,7 @@ function Header() {
                     </div>
                 </Link>
             </button>
-            <div className='text-1xl font-bold ml-5'>
+            <div className='text-1xl font-bold ml-4'>
                 <ul className='flex cursor-pointer text-center'>
                     <li className='hover:text-xl ' >
                         <button>
