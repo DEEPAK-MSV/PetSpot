@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function Header() {
     return (
-        <div className='w-full flex fixed z-30 justify-between p-4 border-b border-black-900 bg-white'>
+        <div className='w-full flex fixed z-20 justify-between p-4 border-b border-black-900 bg-white'>
             <button>
                 <Link to={"/"}>
                     <div className='flex flex-row cursor-default'>
