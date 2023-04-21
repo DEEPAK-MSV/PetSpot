@@ -8,6 +8,7 @@ import './index.css'
 // React Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Content from './pages/Content'
+import Page404 from './pages/Page404'
 
 const router = createBrowserRouter([
   {
@@ -23,10 +24,6 @@ const router = createBrowserRouter([
         element: <Content />
       },
       {
-        path: "/deals",
-        element: <Content />
-      },
-      {
         path: "cats",
         element: <Cats />
       },
@@ -35,6 +32,9 @@ const router = createBrowserRouter([
         element: <Dogs />
       },
     ],
+  },{
+    path: "/*",
+    element: <Page404/>,
   }
 ])
 
