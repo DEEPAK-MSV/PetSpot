@@ -43,7 +43,7 @@ function Content() {
     return (
         <div>
             <div>
-                <h1 className='font-bold text-3xl text-center mt-10'>Deal Of The Day</h1>
+                <h1 className='font-bold text-3xl text-center mt-15'>Deal Of The Day</h1>
             </div>
             <div className="w-full h-full pl-10 align-center justify-center flex flex-wrap mt-10">
                 {images.map((image, index) => (
